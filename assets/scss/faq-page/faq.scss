@@ -1,0 +1,126 @@
+.faq {
+  padding: 80px 0px;
+
+    h2 {
+      text-align: center;
+    }
+
+  .accordion {
+    padding-top: 20px;
+
+    .accordion-item {
+      padding: 10px 0px;
+
+      .accordion-header {
+        .accordion-button {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          font-weight: 700;
+          font-size: 14px;
+
+          &::after {
+            background-image: url(../img/faq-page/plus.svg);
+          }
+
+          &:not(.collapsed) {
+            color: #B1231E;
+            background-color: inherit;
+
+            &::after {
+              background-image: url(../img/faq-page/minus.svg);
+              height: 0.25rem;
+            }
+          }
+          
+          &:focus {
+            box-shadow: 0 0 0 0.25rem rgba(177, 35, 30, 0.3);
+            border-radius: 4px;
+          }
+
+          &::after {
+            margin-right: 20px;
+            margin-left: 0;
+          }
+        }
+      }
+      .accordion-body {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .faq .accordion .accordion-item .accordion-header .accordion-button {
+    font-size: 20px;
+  }
+}
+
+
+@media only screen and (min-width: 992px) {
+  .main-services {
+    .container {
+      max-width: 90%;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 22px;
+    }
+  }
+  
+  .faq {
+    padding: 80px 0px;
+  
+  
+    .container {
+      max-width: 90%;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 22px;
+    }
+      h2 {
+        text-align: center;
+      }
+  
+  
+    .accordion {
+      padding-top: 20px;
+
+      .accordion-item {
+        padding: 10px 0px;
+
+        .accordion-header {
+          .accordion-button {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            font-weight: 700;
+            font-size: 31px;
+
+            &:not(.collapsed) {
+              color: #B1231E;
+              background-color: inherit;
+
+              &::after {
+                height: 0.25rem;
+              }
+            }
+            
+            &:focus {
+              box-shadow: 0 0 0 0.25rem rgba(177, 35, 30, 0.3);
+              border-radius: 4px;
+            }
+
+            &::after {
+              margin-right: 20px;
+              margin-left: 0;
+            }
+          }
+        }
+        .accordion-body {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}

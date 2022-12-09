@@ -1,0 +1,138 @@
+.about {
+
+  .container {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;    
+  }
+  
+  &-section {
+    display: flex;
+    flex-direction: column-reverse;
+
+    &-wrapper {
+
+      &__img {
+        
+        width: 100%;
+        height: 700px;
+        object-fit: cover;
+        overflow: hidden;
+      }
+    }
+
+    &-info {
+      width: 100%;
+      max-width: 800px;
+      padding: 40px;
+      box-shadow: 0 10px 30px 5px hsl(0deg 0% 6% / 10%);
+      background: #FFFFFF;
+
+      .text {
+        text-transform: uppercase;
+        color: #B1231E;
+        font-weight: 700;
+      }
+
+      h2 {
+        font-weight: 500;
+        line-height: 64px;
+        padding: 10px 0;
+      }
+
+      h3 {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 50px;
+        padding-bottom: 20px;
+        color: #707070;
+      }
+
+      .description {
+        font-size: 20px;
+        line-height: 32px;
+        text-align: justify;
+        color: #707070;
+      }
+
+      .link-aboutus {
+        font-size: 18px;
+        font-weight: 700;
+        color: #B1231E;
+
+        &:hover {
+          color: #4b0806;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .about {
+
+    &-section {
+      position: relative;
+      display: block;
+  
+      &-wrapper {
+        position: relative;
+        left: 88px;
+      }
+  
+      &-info {
+        position: absolute;
+        top: 50%;
+        right: 88px;
+        transform: translateY(-50%);
+        width: 100%;
+        max-width: 700px;
+        height: 600px;
+        padding: 40px;
+        box-shadow: 0 10px 30px 5px hsl(0deg 0% 6% / 10%);
+        background: #FFFFFF;
+  
+        .text {
+          text-transform: uppercase;
+          color: #B1231E;
+          font-weight: 700;
+        }
+  
+        h2 {
+          font-size: 31px;
+          font-weight: 500;
+          line-height: 64px;
+          padding: 10px 0;
+        }
+  
+        h3 {
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 50px;
+          padding-bottom: 20px;
+          color: #707070;
+        }
+  
+        .description {
+          font-size: 18px;
+          line-height: 32px;
+          text-align: justify;
+          color: #707070;
+        }
+  
+        .link-aboutus {
+          font-size: 18px;
+          font-weight: 700;
+          color: #B1231E;
+  
+          &:hover {
+            color: #4b0806;
+          }
+        }
+      }
+    }
+  }
+
+
+}

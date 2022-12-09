@@ -1,0 +1,46 @@
+.additional-services {
+  padding-top: 80px;
+
+  .section-title {
+
+  }
+
+  &__text {
+    padding-top: 30px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 40px;
+  }
+
+  .info-container {
+
+    .section-title {
+      font-weight: 700;
+      font-size: 22px;
+    }
+
+    &__wrapper {
+
+      svg {
+        width: 100%;
+        height: 600px;
+      }
+
+      &-img {
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+        object-fit: cover;
+      }
+    }
+
+    &__text {
+
+      &-description {
+        padding-top: 20px;
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
+  }
+}
