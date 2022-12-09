@@ -1,0 +1,54 @@
+.info-block {
+
+
+  &__wrapper {
+
+    &-img {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      object-fit: cover;
+    }
+    .info-block-img {
+      height: 720px;
+    }
+  }
+
+  &__info {
+
+
+    .section-title {
+      padding-bottom: 10px;
+    }
+
+    .list-advantage {
+      margin-left: 60px;
+
+      &__text {
+        position: relative;
+        padding-top: 15px;
+        font-size: 20px;
+        text-align: justify;
+
+        &::before {
+          content: '';
+          position: absolute;
+          left: -60px;
+          width: 30px;
+          height: 30px;
+          background: url(../img/main-page/form/check.svg);
+          background-color: rgba(177, 35, 30, 1);
+          background-size: 18px;
+          background-position: center;
+          background-repeat: no-repeat;
+          border-radius: 50%;
+        }
+        
+        &-part {
+          font-weight: 60;
+          color: #B1231E;
+        }
+      }
+    }    
+  }
+}
